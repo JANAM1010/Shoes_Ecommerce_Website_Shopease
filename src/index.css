@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #fcfbfb;
+  color: #6c6a6a;
+}
+a{
+  text-decoration: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Light Mode (default) */
+body{
+  font-family: 'Poppins', sans-serif;
+  color: #747272;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+a{
+  text-decoration: none;
+}
+.hero-banner{
+  background-color: linear-gradient(135deg, #bce8f7 0%, #caebf7 50%, #9b9d9e 100%);
+  color: #e0e0e0;
+}
+/* Dark Mode */
+body[data-theme='dark'] {
+  background-color: #202042;
+  color: #e0e0e0;
+}
+body[data-theme='dark'].hero-banner{
+  background-color: linear-gradient(135deg, #68d1f7 0%, #caebf7 50%, #9b9d9e 100%);
+  color: #e0e0e0;
+}
+body[data-theme='dark'] .product-card {
+  background-color: #202042;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+body[data-theme='dark'] .product-image-container {
+  background-color: #202042;
+}
+body[data-theme='dark'] .product-title {
+  color: #e0e0e0;
+}
+body[data-theme='dark'] .home-title {
+  color: #e0e0e0;
+}
+body[data-theme='dark'] .filter-bar {
+  background-color: #202042;
+  border-bottom-color: #2a2a3e;
+}
+body[data-theme='dark'] .search-input {
+  background-color: #202042;
+  border-color: #424275;
+  color: #e0e0e0;
+}
+body[data-theme='dark'] .search-input::placeholder {
+  color: #888;
+}
+body[data-theme='dark'] .sort-select {
+  background-color: #202042;
+  border-color: #2a2a3e;
+  color: #e0e0e0;
+}
+body[data-theme='dark'] .category-bar {
+  background-color: #1a1a2e;
+  border-bottom-color: #2a2a3e;
+}
+body[data-theme='dark'] .sub-category-bar {
+  background-color: #1a1a2e;
+  border-bottom-color: #2a2a3e;
+}
+body[data-theme='dark'] .category-btn {
+  background-color: #16213e;
+  border-color: #2a2a3e;
+  color: #aaa;
+}
+body[data-theme='dark'] .sub-category-btn {
+  background-color: #16213e;
+  border-color: #2a2a3e;
+  color: #aaa;
+}
+body[data-theme='dark'] .cart-item {
+  background-color: #1a1a2e;
+}
+body[data-theme='dark'] .cart-summary {
+  background-color: #1a1a2e;
+}
+body[data-theme='dark'] .cart-item-title {
+  color: #e0e0e0;
+}
+body[data-theme='dark'] .cart-header h2 {
+  color: #e0e0e0;
+}
+body[data-theme='dark'] .summary-row {
+  color: #aaa;
+}
+body[data-theme='dark'] .total-row {
+  color: #e0e0e0;
+}
+body[data-theme='dark'] .product-detail {
+  background-color: #0f0f1a;
+}
+body[data-theme='dark'] .product-detail-image-container {
+  background-color: #1a1a2e;
+}
+body[data-theme='dark'] .product-detail-title {
+  color: #e0e0e0;
+}
+body[data-theme='dark'] .product-detail-description {
+  color: #aaa;
+}
+body[data-theme='dark'] .back-btn {
+  border-color: #e0e0e0;
+  color: #e0e0e0;
+}
+body[data-theme='dark'] .back-btn:hover {
+  background-color: #e0e0e0;
+  color: #1a1a2e;
+}
+body[data-theme='dark'] .home {
+  background-color: #0f0f1a;
+}
+body[data-theme='dark'] .cart {
+  background-color: #0f0f1a;
+}
+body[data-theme='dark'] .cart-item-price {
+  color: #aaa;
+}
+body[data-theme='dark'] .qty-btn {
+  background-color: #16213e;
+  border-color: #2a2a3e;
+  color: #e0e0e0;
+}
+body[data-theme='dark'] .cart-summary h3 {
+  color: #e0e0e0;
+}

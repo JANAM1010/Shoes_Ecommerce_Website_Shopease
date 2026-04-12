@@ -1,0 +1,73 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 32px;
+  background-color: #130e0d;
+  color: white;
+}
+.navbar-brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+.navbar-links {
+  display: flex;
+  gap: 24px;
+}
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+.navbar-links a:hover {
+  color: #e94560;
+}
+.cart-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.cart-count {
+  background-color: #e94560;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 50px;
+  position: absolute;
+  top: -10px;
+  right: -14px;
+}
+.navbar-username {
+  font-size: 14px;
+  color: #ccc;
+}
+.navbar-logout-btn {
+  background: none;
+  border: 2px solid #e94560;
+  color: #e94560;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.navbar-logout-btn:hover {
+  background-color: #e94560;
+  color: white;
+}
+.navbar-signup-btn {
+  background-color: #e94560;
+  color: white !important;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+.navbar-signup-btn:hover {
+  background-color: #c73652;
+}

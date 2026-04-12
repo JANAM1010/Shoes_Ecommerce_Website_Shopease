@@ -1,0 +1,126 @@
+.home {
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.home-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+.error-message {
+  text-align: center;
+  padding: 60px;
+  color: #e94560;
+  font-size: 16px;
+}
+/* Search + Sort Bar */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 32px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+}
+.search-input {
+  flex: 1;
+  padding: 10px 18px;
+  border: 2px solid #e0e0e0;
+  border-radius: 24px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  min-width: 200px;
+}
+.search-input:focus {
+  border-color: #e94560;
+}
+.sort-select {
+  padding: 10px 18px;
+  border: 2px solid #e0e0e0;
+  border-radius: 24px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.2s ease;
+}
+.sort-select:focus {
+  border-color: #e94560;
+}
+/* Product count */
+.product-count {
+  font-size: 16px;
+  font-weight: 400;
+  color: #888;
+}
+/* No results */
+.no-results {
+  text-align: center;
+  padding: 60px;
+  color: #555;
+}
+.no-results p {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.no-results button {
+  padding: 10px 24px;
+  background-color: #e94560;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+/* Hero Banner */
+.hero-banner {
+  padding: 48px 40px;
+  color: rgb(127, 129, 127);
+  text-align: center;
+}
+.hero-title {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+.hero-subtitle {
+  font-size: 16px;
+  color: rgba(141, 144, 142, 0.8);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 26px;
+  }
+  .hero-subtitle {
+    font-size: 14px;
+  }
+  .home {
+    padding: 20px 16px;
+  }
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+  }
+  .filter-bar {
+    padding: 12px 16px;
+    gap: 10px;
+  }
+  .search-input {
+    min-width: 100%;
+  }
+}
