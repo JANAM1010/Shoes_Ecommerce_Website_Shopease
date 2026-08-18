@@ -23,8 +23,14 @@ function ProductCard({ product }) {
   return (
     <div className="product-card" onClick={() => navigate(`/product/${product.id}`)}>
       <div className="product-image-container">
-        <img  src={product.images?.[0]}  alt={product.title}  className="product-image"
-          onError={(e) => {  e.target.src = 'https://placehold.co/200x200?text=No+Image'  }}/>
+          <img
+            src={product.images?.[0]}
+            alt={product.title}
+            className="product-image"
+            onError={(e) => {
+              console.log("❌ Image failed to load:", product.images?.[0])  
+              e.target.src = 'https://placehold.co/200x200?text=No+Image'}}/>
+
         <div className="product-overlay">
           <span className="view-details-btn">View Details</span>
         </div>

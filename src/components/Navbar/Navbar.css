@@ -6,6 +6,9 @@
   background-color: #130e0d;
   color: white;
 }
+.Home{
+  margin-top: 6px;
+}
 .navbar-brand a {
   color: white;
   text-decoration: none;
@@ -22,7 +25,7 @@
   font-size: 16px;
 }
 .navbar-links a:hover {
-  color: #e94560;
+  color: #e58696;
 }
 .cart-link {
   position: relative;

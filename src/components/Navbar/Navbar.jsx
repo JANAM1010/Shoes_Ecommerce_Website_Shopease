@@ -20,7 +20,7 @@ function Navbar() {
         <Link to="/">🛍️ ShopEase</Link>
       </div>
       <div className="navbar-links">
-        <Link to="/">Home</Link>
+        <Link to="/" className='Home'>Home</Link>
         <Link to="/wishlist" className="cart-link">
           Wishlist ❤️
           {totalWishlist > 0 && ( <span className="cart-count">{totalWishlist}</span>)}
