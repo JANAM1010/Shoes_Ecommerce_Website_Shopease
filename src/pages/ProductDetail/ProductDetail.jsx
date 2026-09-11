@@ -5,7 +5,6 @@ import Spinner from '../../components/Spinner/Spinner'
 import useCart from '../../hooks/useCart'
 import useToast from '../../hooks/useToast'
 import './ProductDetail.css'
-import products from '../../data/products'
 
 function ProductDetail() {
   const { id } = useParams()

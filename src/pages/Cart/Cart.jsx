@@ -15,18 +15,20 @@ function Cart() {
     totalItems,
     totalPrice
   } = useCart()
+
   if (cartItems.length === 0) {
     return (
       <div className="cart-empty">
         <div className="cart-empty-icon">🛒</div>
         <h2>Your cart is empty!</h2>
         <p>Looks like you haven't added anything yet.</p>
-        <button  className="continue-shopping-btn"  onClick={() => navigate('/')}>
+        <button  className="continue-shopping-btn"  onClick={() => navigate('/home')}>
           Continue Shopping
         </button>
       </div>
     )
   }
+  
   return (
     <div className="cart">
       <div className="cart-header">
@@ -96,7 +98,7 @@ function Cart() {
             Clear Cart
           </button>
           <button
-            className="continue-btn" onClick={() => navigate('/')}>
+            className="continue-btn" onClick={() => navigate('/home')}>
             ← Continue Shopping
           </button>
         </div>

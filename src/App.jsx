@@ -13,11 +13,11 @@ function App() {
   const { isLoggedIn } = useAuth()
   return (
     <div>
-      {isLoggedIn && <Navbar />}
+      {isLoggedIn ? <Navbar /> : null}
       <Routes>
-        <Route path="/login" element={isLoggedIn ? <Navigate to="/" replace /> : <Login />} />
-        <Route path="/signup" element={isLoggedIn ? <Navigate to="/" replace /> : <Signup />} />
-        <Route path="/" element={isLoggedIn ? <Home /> : <Navigate to="/login" replace />} />
+        <Route path="/login" element={isLoggedIn ? <Navigate to="/home" replace /> : <Login />} />
+        <Route path="/signup" element={isLoggedIn ? <Navigate to="/home" replace /> : <Signup />} />
+        <Route path="/home" element={isLoggedIn ? <Home /> : <Navigate to="/login" replace />} />
         <Route path="/cart" element={isLoggedIn ? <Cart /> : <Navigate to="/login" replace />} />
         <Route path="/product/:id" element={isLoggedIn ? <ProductDetail /> : <Navigate to="/login" replace />} />
         <Route path="/wishlist" element={isLoggedIn ? <Wishlist /> : <Navigate to="/login" replace />} />

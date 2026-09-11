@@ -10,7 +10,7 @@ function NotFound() {
         <div className="notfound-emoji">👟</div>
         <h2 className="notfound-title">Welcome Home...</h2>
         <div className="notfound-buttons">
-          <button  className="notfound-home-btn"  onClick={() => navigate('/')}>
+          <button  className="notfound-home-btn"  onClick={() => navigate('/home')}>
             🏠 Home
           </button>
         </div>

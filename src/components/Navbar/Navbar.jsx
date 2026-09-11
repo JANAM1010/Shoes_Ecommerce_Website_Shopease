@@ -12,15 +12,15 @@ function Navbar() {
   const { totalWishlist } = useWishlist()
   const navigate = useNavigate()
   const handleLogout = () => {  logout()
-      navigate('/')}
+      navigate('/login')}
 
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <Link to="/">🛍️ ShopEase</Link>
+        <Link to="/home">🛍️ ShopEase</Link>
       </div>
       <div className="navbar-links">
-        <Link to="/" className='Home'>Home</Link>
+        <Link to="/home" className='Home'>Home</Link>
         <Link to="/wishlist" className="cart-link">
           Wishlist ❤️
           {totalWishlist > 0 && ( <span className="cart-count">{totalWishlist}</span>)}

@@ -18,7 +18,7 @@ function Wishlist() {
         <p>Save items you love by clicking the ❤️ button</p>
         <button
           className="wishlist-shop-btn"
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/home')}
         >
           Start Shopping
         </button>

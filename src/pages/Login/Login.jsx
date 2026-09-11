@@ -18,15 +18,20 @@ function Login() {
     if (!identifier || !password) {
       return setError('All fields are required!')
     }
+
     setLoading(true)
+    
     setTimeout(() => {
       const result = login(identifier, password)
       setLoading(false)
+      
       if (!result.success) {
         return setError(result.message)
       }
+      else{
       toast.success('Welcome back! 👟')
-      navigate('/')
+      navigate('/home')
+      }
     }, 600)
   }
   return (
